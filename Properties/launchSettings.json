@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PlaylistManager": {
+      "commandName": "Project",
+      "commandLineArgs": "100"
+    }
+  }
+}
