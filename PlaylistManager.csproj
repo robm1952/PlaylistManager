@@ -46,7 +46,7 @@
 
   <ItemGroup>
     <Reference Include="InitConf">
-      <HintPath>..\..\InitConf\InitConf\bin\Debug\net10.0\InitConf.dll</HintPath>
+      <HintPath>D:\repos\InitConf\InitConf\bin\Debug\net10.0\InitConf.dll</HintPath>
     </Reference>
   </ItemGroup>
 
