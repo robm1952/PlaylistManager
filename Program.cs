@@ -46,6 +46,6 @@ internal class Program {
 
 
 //**
-//several christmas and some soundtracks have been excluded so now there is a set of filtered songs.
-//; retrieve filtered and random picked set of songs, Write list of FQN = FI.FullNameit out to m3u file 
+//several christmas albums and some soundtracks have been excluded from selectable files. Now there is a set of filtered songs.
+//retrieve filtered and random picked set of songs, Write list of FQN = FI.FullNameit out to m3u file 
 //Create playlist objects and store them in the playlist table in PlaylistHistory
