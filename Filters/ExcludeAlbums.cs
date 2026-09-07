@@ -5,11 +5,13 @@ namespace PlaylistManager.Filters {
     internal class ExcludeAlbums {
         private static HashSet<int>? excludedAlbums;
         private static IConfiguration? _config;
+        private static int taDa = 0;
         private readonly MediaCoreContext? mcContext;        //connection to MediaCore database
 
         public ExcludeAlbums(IConfiguration configuration) {
             _config = configuration;
             mcContext = new MediaCoreContext();
+            taDa++;
         }
 
         public HashSet<Song> DoExclusion(HashSet<Song> allSongs) {
