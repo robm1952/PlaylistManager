@@ -1,2 +1,2 @@
 # PlaylistManager
-Create a generally accepted M3U file and then commits to Playlists table info about the song.
+Create a generally accepted M3U file and then take all the available TagSharp data about each song, then creates and commits the new data to Playlists table.
