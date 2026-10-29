@@ -8,7 +8,7 @@ internal class Program {
     private static int UserRequest;
 
     private static void Main(string[] args) {
-        IConfiguration config = InitConf.InitConfig.InitializeConfig();
+        IConfiguration config = InitConf.InitializeConfig();
 
         //retrieve and validate incoming data
         UserInput ui = new(config);
@@ -38,6 +38,16 @@ internal class Program {
         }
         else {
             throw new Exception("filteredSongs is null or zero count");
+        }
+    }
+
+    public class InitConf {
+        public static IConfiguration InitializeConfig() {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            return builder.Build();
         }
     }
 }

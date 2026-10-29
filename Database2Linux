@@ -1,0 +1,5 @@
+Database
+Having 2 databases 1 in each 
+1. Create Read/Write user with permissions to MediaCore and PlaylistHistory
+2. Copy existing data from mssql to mysql
+3. There will be a problem with Ids
