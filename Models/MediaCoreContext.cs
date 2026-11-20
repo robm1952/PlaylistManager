@@ -41,7 +41,6 @@ public partial class MediaCoreContext : DbContext
             entity.Property(e => e.AlbumArtistId).HasColumnName("albumArtistId");
             entity.Property(e => e.AlbumDisc).HasColumnName("albumDisc");
             entity.Property(e => e.AlbumGenre).HasColumnName("albumGenre");
-            entity.Property(e => e.AlbumRanking).HasColumnName("albumRanking");
             entity.Property(e => e.AlbumTitle)
                 .HasMaxLength(250)
                 .HasColumnName("albumTitle");
@@ -83,7 +82,6 @@ public partial class MediaCoreContext : DbContext
             entity.Property(e => e.SongId).HasColumnName("songID");
             entity.Property(e => e.SongAlbumId).HasColumnName("songAlbumId");
             entity.Property(e => e.SongDuration).HasColumnName("songDuration");
-            entity.Property(e => e.SongRanking).HasColumnName("songRanking");
             entity.Property(e => e.SongTitle)
                 .HasMaxLength(250)
                 .HasColumnName("songTitle");

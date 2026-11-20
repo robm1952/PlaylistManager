@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using InitConf;
+using Microsoft.Extensions.Configuration;
 using PlaylistManager.Inputs;
 using PlaylistManager.Models;
 using PlaylistManager.Outputs;
@@ -8,7 +9,7 @@ internal class Program {
     private static int UserRequest;
 
     private static void Main(string[] args) {
-        IConfiguration config = InitConf.InitConfig.InitializeConfig();
+        IConfiguration config = InitConfig.InitializeConfig();
 
         //retrieve and validate incoming data
         UserInput ui = new(config);

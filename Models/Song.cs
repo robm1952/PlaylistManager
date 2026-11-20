@@ -14,6 +14,4 @@ public partial class Song
     public long SongDuration { get; set; }
 
     public int SongTrackNumber { get; set; }
-
-    public int? SongRanking { get; set; }
 }

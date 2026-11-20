@@ -1,0 +1,2 @@
+PlaylistManager Plans:
+1. Modify write section, so that it makes a parallel version of the playlist, but using Linux file notation.

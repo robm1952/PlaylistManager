@@ -16,6 +16,4 @@ public partial class Album
     public int? AlbumYear { get; set; }
 
     public int? AlbumDisc { get; set; }
-
-    public int? AlbumRanking { get; set; }
 }
