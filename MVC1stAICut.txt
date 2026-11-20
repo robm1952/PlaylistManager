@@ -1,0 +1,64 @@
+=================================================================
+Create a new C# .NET CORE MVC Razor Web application named MyRazorWebApp.
+This should be a new project, in its own folder and the path to the project should start with D:\Repos\WebSites\
+The web application will get data from the default MSSQL instance running on Boomer2. The application will connect to the MediaCore database as a trusted connection
+The application will use Bootstrap 5 for css
+Do NOT use any javascript framework.
+
+When the application loads:
+User sees a list of the artists names.
+Paging will be used
+No more that 15 artist names per page
+ArtistNames will be  ordered by artistSortName. Only the artist name will be displayed.
+Each artist name in the list will be a link. The link will take the use to a new page that displays the albums recorded by thge artist.
+Each album title in the list of albums will be a link. The link will take the user to a new page that shows all the title of songs on the album.
+A breadcrumb menu at the top of a selected page should allow the user to move up 1 level or return to the list of artists
+Counts of artists and Counts of albums should NOT be displayed.
+At the bottom of the viewable page there will be a conventional page number menu. It should have standard functionality for menus of this type
+Album titles shall be 10% larger than song ttles.
+Artist Names shall be 10% larger than Album titles.
+Plain white page backgrounds are NOT acceptable.
+
+
+
+
+
+Only display the Artist Name. Maximum of 15 names per column. Delete the Sort Name and Albums columns and all related code.o not show Sort Name column or Albums column.
+Underneath the ugly Artists logo get rid of - Artist count total
+On the Albums page get rid of th enumber under the artist name, get rid of the back to artists button. The album names should be in a column. Get rid of view songs button.
+Songs page: get rid of back to artist albums button. get rid of the filename below the song name.
+
+Notes on code; Consider all things stated here as actionable items
+All Artists page
+	get rid of double hypen and count of artists
+	Only display the Artist Name and limit the size of the columns to 15 names.  Delete the Sort Name and Albums columns and all code that creates/uses those columns
+Artist / Albums page
+	get rid of the back to artists button and all its associated code.
+	get rid of the view songs button and all its associated code.
+	Remove the Genre Name and Disc number.
+	Move the number of tracks to the left.
+	Album names should be in a vertical list.
+Artist / Albums / Songs page
+	Delete the back to artist albums button
+	Delete the By in front of the artist name
+	Remode the Disc number
+	remove the file name from the display of the song title.
+Any questions?
+
+Using the current code
+
+//To run Angular 
+Set-Location 'D:\Repos\WebSites\MyAngularSPA\server'
+dotnet run --launch-profile http
+
+Set-Location 'D:\Repos\WebSites\MyAngularSPA\client'
+npm start
+
+Then open http://localhost:4200. Keep both terminals running. The app connects to Boomer2\MediaCore using your Windows account, which needs permission to read the database.
+
+
+There will be a second menu below the first.
+The second menu, will be a horizontally displayed list of starting letters of the artists in the database. Each letter is a link. The link takes the user to a list of Artists whose names start with the selected letter. Breadcrumb should show all artists
+Lists should use alternating colors 
+Album titles should alwyas be 10% smaller than Artist names.
+Song titles should always be 10% smaller than Album titles.
